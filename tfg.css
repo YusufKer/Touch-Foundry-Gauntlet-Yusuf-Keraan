@@ -1,0 +1,448 @@
+/*
+KEY	: [] ... this represents the Horizontal (x) position of the element 
+*/
+/*General styling... Since they're so common, I do this to avoid having to keep setting these properties */
+body{
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.1em;
+	color:#484848;
+}
+
+
+/*Header... This is where I've put the nav-bar*/
+header{
+	display:flex;
+	justify-content: space-between;
+	padding:15px 2em;	
+}
+/*Logo... [  left  ]*/
+
+/*Search Bar... [  center  ]*/
+#search-bar{
+	display: flex;
+	flex-wrap: 	wrap;	
+	width:400px;
+}
+#search-bar>button{
+	background-color: white;
+	border: none;	
+}
+.fa-search{
+	color: #484848;	
+}
+
+#search-nav{
+	border:none;
+	flex:1;
+	border-radius: 4px;
+}
+
+/*Nav Buttons... [   right   ]*/
+.top-button{
+	padding:5px 15px;
+	background-color: white;
+	border:1px solid white;
+}
+.top-button:hover{
+	border:1px solid #999999;
+	border-radius: 4px;
+}
+
+
+
+/*
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+*/
+
+
+/*Main Banner... Main Focus when entering the page*/
+.banner-outer{
+	display: flex;
+	align-items: center;
+}
+.banner{
+	min-height: 50vh;
+}
+#main-banner{
+	flex:1;
+	color:white;
+	background-image: url("./images/bg.png");
+	background-repeat: no-repeat;
+	padding:5em;
+}
+#main-banner > h1{
+	margin:0;
+	padding-top: 50px;
+	font-size: 40px;
+	line-height: 47px;
+}
+#main-banner > p{
+	margin:0;
+	padding: 1em;
+	/*require font sizes*/
+}
+.banner-user-input{
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	color: #484848;	
+}
+#banner-search-button{
+	background-color: #66C385;
+	border-color: #66C385;
+	border-radius: 	4px;
+	border-box-shadow: none;
+	color: white;
+	width:200px;
+}
+
+
+/*
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+*/
+
+.section{
+	padding:5% 0;
+	position: relative;
+}
+/*Section 1*/
+#section{
+	margin:0;
+	padding:0;
+}
+#section > h2{
+	margin:0;
+	padding:0;	
+	font-size: 28px;
+}
+#section >p{
+	margin:0;
+	padding:0;
+	font-size: 15px
+}
+
+.grid{
+	padding:0 10%;
+	display:grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr
+}
+.grid-item{
+	position:relative;	
+	background-repeat: no-repeat;
+	width:340px;
+	height:220px;
+}
+
+/*000000000000000  The three divs bellow are a work around in oorder to get the opacity of the background to change while the h1 seems to keep its full opacity*/
+.opacity-div{
+	opacity: .75;
+	padding:0;
+	margin:0;
+	background-color:black; 
+	color:white;
+	position: absolute;
+	bottom:0;
+	width:100%;
+}
+/*000000000000000  Very important that these two classes have the same size properties  000000000000000*/
+.opacity-div > h2{
+	padding: 15px 0;
+	margin: 0; 
+	line-height: 19px;
+	font-size: 19px;
+} 
+.grid-item > h2{
+	padding:15px 0;
+	margin:0;
+	color:white;
+	position: absolute;
+	bottom:0;
+	width:100%;
+	line-height: 19px;
+	font-size: 19px;
+}
+/*00000000000000000000000000000000*/
+
+
+/*
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+*/
+
+
+/*Section-2*/
+#section-2{
+	background-color: #F8F8F8;
+}
+
+
+/*00000000000000000000000000000000  Some more opacity cheating  00000000000000000000000000000000*/
+.city{
+	margin:0;
+	padding:10px;
+	font-size: 15px;
+	color:black;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.opacity-div-city{
+	color:black;
+	background-color: white;
+	position:absolute;
+	top:0;
+	right:0;
+	opacity: .2;
+}
+.opacity-div-city > h3{
+	margin:0;
+	padding:10px;
+	font-size: 15px;
+}
+/*00000000000000000000000000000000  Some more opacity cheating  00000000000000000000000000000000*/
+
+
+/*
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+*/
+
+
+/*Section 3*/
+.gr3-i-outer{
+	box-shadow: 1px 1px 1px 1px lightgrey;
+}
+.grid-three-item{
+	position:relative;
+	width:340px;
+	height:220px;
+	background-image: url("./images/thumb.png");
+	background-repeat: no-repeat;
+
+}
+
+.grid-three-item-heading{
+	display: flex;
+	justify-content: space-between;
+	opacity: .75;
+	padding:0;
+	margin:0;
+	background-color:black; 
+	color:white;
+	position: absolute;
+	bottom:0;
+	width:100%;
+	line-height: 19px;
+	font-size: 19px;
+}
+.stars{
+	font-size: 13px;
+	padding:10px 1em;
+	margin-bottom: 0;
+	height: 19px;
+}
+.checked {
+  color: orange;
+}
+.price{
+	padding:10px 1em;
+	margin: 0;
+}
+.card-bottom{
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	justify-content: space-between;
+	width: 340px;
+	padding:10;
+	margin:0;
+}
+.card-labels{
+	margin:0;
+	padding:0 1em;
+}
+.profile-pic{
+	top:50%;
+	margin:5px;
+	width:75px;
+	height:75px;
+	border:1px solid black;
+	border-radius: 50%;
+}
+
+/*
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+*/
+
+
+/*Section 4... The seconnd Banner*/
+
+#second-banner{
+	margin-top: 5%;
+	color:white;
+	flex:1;
+	background: url("./images/bg2.jpg") no-repeat center center fixed;
+	padding:4em;
+	width:100%;
+	background-size:cover;
+}
+.boxes{
+	text-align: left;
+	margin: 0 15%;
+	display: flex;
+	justify-content: space-around;
+}
+.box{
+	padding: 0 1em;
+}
+#box-1{
+	border: 1px solid #66C385;
+}
+#box-2{
+	border: 1px solid #56C8BD;
+}
+
+
+/*
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+*/
+#right{
+	position: absolute;
+	top:50%;
+	right:0;
+	transform: translateY(-50%);
+}
+#left{
+	position: absolute;
+	top:50%;
+	left:0;
+	transform: translateY(-50%);
+}
+iframe{
+	margin:0;
+	padding:0;
+}
+.video-card-bottom{
+	display: flex;
+	margin:0;
+	padding:0;
+}
+.video-card-headings{
+	text-align: left;
+	padding:0 5px;
+	margin:0;
+}
+.video-card-headings > h2{
+	margin:0;
+	padding:0;
+}
+.video-card-headings > p{
+	margin:0;
+	padding:0;	
+}
+
+
+
+/*Footer*/
+footer{
+	background-color: #484848;
+	margin: 0;
+}
+
+.footer-options{
+	margin:0 15%;
+	display: flex;
+	justify-content: space-between;
+	color:#65BE83;
+}
+.footer-options > div >h2{
+	text-align: left
+}
+.footer-list{
+	color:white;
+	list-style: none;
+	text-align: left;
+	margin:2em 0;
+	padding: 0;
+}
+
+
+.sm-icon {
+	color:#484848;
+	background-color: white;
+	padding:12px;
+	border-radius: 50%;
+  }
+.copyright{
+	background-color: #DCE0E0;
+	margin: 0;
+	padding:3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Adding the background images of the cards*/
+#gr1-1{
+	background-image: url("./images/thumb.png");
+}
+#gr1-2{
+	background-image: url("./images/thumb.png");
+}
+#gr1-3{
+	background-image: url("./images/thumb.png");
+}
+
+#gr2-1{
+	background-image: url("./images/needed.jpg");
+}
+#gr2-2{
+	background-image: url("./images/trending1.jpg");
+}
+#gr2-3{
+	background-image: url("./images/thumb.png");
+}#gr2-4{
+	background-image: url("./images/thumb.png");
+}
+#gr2-5{
+	background-image: url("./images/thumb.png");
+}
+#gr2-6{
+	background-image: url("./images/thumb.png");
+}
